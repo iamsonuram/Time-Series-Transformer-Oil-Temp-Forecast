@@ -40,3 +40,14 @@ The model was evaluated using the following metrics:
 - No pre-trained models were used, as per the project guidelines.
 
 ## Project Structure
+/project-directory │ ├── train.csv # Training dataset ├── test.csv # Test dataset ├── forecast.ipynb # Jupyter Notebook containing code ├── README.md # Project documentation (this file) ├── requirements.txt # Dependencies
+
+
+### Dependencies
+- pandas
+- numpy
+- scikit-learn
+- tensorflow
+- matplotlib
+- seaborn
+- plotly
