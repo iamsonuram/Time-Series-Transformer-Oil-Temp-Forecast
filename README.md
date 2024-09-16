@@ -35,12 +35,13 @@ The model was evaluated using the following metrics:
 - **MAPE** (Mean Absolute Percentage Error)
 
 ## Assumptions
-- Data is assumed to be correctly preprocessed.
-- StandardScaler and MinMaxScaler are used for feature scaling.
-- No pre-trained models were used, as per the project guidelines.
+
+1. The datasets `train.csv` and `test.csv` contain columns `HUFL`, `HULL`, `MUFL`, `MULL`, `LUFL`, `LULL`, `OT`, and `date`.
+2. The target variable for prediction is `OT` (Oil Temperature).
+3. Time-series forecasting is done using LSTM, which requires the input to be reshaped as (samples, timesteps, features).
 
 ## Project Structure
-/project-directory │ ├── train.csv # Training dataset ├── test.csv # Test dataset ├── forecast.ipynb # Jupyter Notebook containing code ├── README.md # Project documentation (this file) # Dependencies
+/project-directory │ ├── train.csv # Training dataset ├── test.csv # Test dataset ├── Forecast_OT.ipynb # Jupyter Notebook containing code ├── README.md # Project documentation (this file) # Dependencies
 
 
 ### Dependencies
@@ -51,3 +52,11 @@ The model was evaluated using the following metrics:
 - matplotlib
 - seaborn
 - plotly
+
+## Usage
+
+1. Clone the repository.
+2. Install dependencies (given).
+3. Load the files into Jupyter notebook/ Google Colab.
+4. Place the `train.csv` and `test.csv` files in the same folder as Forecast_OT.ipynb.
+5. Run all the cells in file Forecast_OT.ipynb to load the data, build the model, and generate predictions.
